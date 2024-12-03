@@ -1,0 +1,554 @@
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+/* 顶部样式 */
+.topBar{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+.container{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+.topBar .topBar_list{
+    float: left;
+}
+.topBar .shop{
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #424242;
+}
+.topBar .login{
+    float: right;
+}
+
+.topBar a{
+    color: #b0b0b0;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 40px;
+}
+.topBar .shop a{
+    width: 120px;
+    height: 40px;
+    display: inline-block; 
+}
+.topBar a:hover{
+    color: #fff;
+}
+.topBar span{
+    color: #424242;
+    margin: 0.5em;
+}
+/* 顶部end */
+/* 小米导航栏 */
+.header{
+    height: 100px;
+    
+}
+.header .site-logo{
+    float: left;
+    width: 52px;
+    margin-top:22px ;
+    
+}
+.header .site-logo a img{
+    display: block;
+    width: 51px;
+    height: 51px;
+
+}
+.header .site-list{
+    float: left;
+    width: 850px;
+}
+.header .site-list>ul{
+    width: 820px;
+    height: 88px;
+    padding: 12px 0 0 30px;
+    font-size: 16px;
+}
+.header .site-list>ul>li{
+    float: left;
+}
+.header .site-list>ul>li>a{
+    display: block;
+    padding: 26px 10px 38px ;
+    color: #333;
+}
+.header .site-list>ul>li> a:hover{
+    color: #ff6700;
+}
+.header .site-list>ul .site-category>a{
+    padding: 0;
+}
+.header .site-list>ul>li.site-category{
+    position: relative;
+    z-index: 3;
+}
+.header .site-list>ul>li.site-category .category-list{
+    position: absolute;
+    display: block;
+    top: 88px;
+    left: -82px;
+    width: 234px;
+    height: 460px;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.category-list>ul{
+    width: 234px;
+    height: 460px;
+    /* padding: 20px 0; */
+}
+.category-list>ul>li{
+    height: 46px;
+}
+.category-list>ul>li>a{
+    padding-left: 30px;
+    top: 0;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+.category-list>ul>li>a:hover{
+    background-color: #ff6700;
+}
+.category-list>ul>li>a>span{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.header .site-search{
+    float: right;
+    width: 296px;
+    margin-top: 25px;
+    
+}
+.header .site-search form{
+    width: 296px;
+    height: 50px;
+    position: relative;
+}
+.header .site-search form .search-text{
+    float: left;
+    width: 223px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.header .site-search form .search-btn{
+    float: left;
+    margin-left: -1px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+}
+.header .site-search form .search-word{
+    position: absolute;
+    font-size: 12px;
+    color: #7575;
+    top: 14px;
+    right: 65px;
+}
+.header .site-search form .search-word a{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0.5px;
+    background-color: #eee;
+    color: #757575;
+    position: relative;
+}
+.header .site-search form .search-word a:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+/* 导航栏end */
+
+/* 小米站点内容 */
+.site-content .site-slider{
+    position: relative;
+    z-index: 2;
+}
+.site-content .site-slider>a img {
+    display: block;
+    width: 1226px;
+    height: 460px;
+}
+.site-content .site-slider a img{
+    width: 1226px;
+    height: 1000;
+}
+.site-content .site-slider span{
+    position: absolute;
+    width: 41px;
+    height: 69px;
+    background: url(../images/icon-slides.png) no-repeat 0 0;
+    top: 25%;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.site-content .site-slider span.prev{
+    background-position: -82px 0;
+    left: 234px;
+}
+.site-content .site-slider span.prev:hover{
+    background-position: 0 0;
+}
+.site-content .site-slider span.next{
+    background-position: -123px 0;
+    right: 0;
+}
+.site-content .site-slider span.next:hover{
+    background-position: -41px 0;
+    
+}
+.site-content .slider-item{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    /* background-color: green; */
+    bottom: 20px;
+    right: 40px;
+}
+.slider-item>a{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.073);
+    border-radius: 6px;
+    border: 2px solid #fff;
+    border-color: rgba(255, 255, 255, .3);
+}
+.slider-item>a:hover{
+    background-color:rgba(255, 255, 255, 0.822) ;
+}
+/* 向导样式 */
+.content-sub{
+    overflow: hidden;
+    margin-top: 18px;
+}
+.content-sub .content-channel{
+    float: left;
+    width: 234px;
+}
+.content-sub .content-channel {
+    background-color: #514a43;
+    font-size: 12px;
+    text-align: center;
+}
+.content-sub .content-channel ul li{
+    float: left;
+    width: 33.33%;
+    height: 85px;
+}
+.content-sub .content-channel ul li a{
+    display: block;
+    padding-top: 18px;
+    color: rgba(255, 255, 255, .3);
+}
+.content-sub .content-channel ul li a i{
+    display: block;
+    font-size: 20px;
+}
+.content-sub .content-list{
+    float: left;
+    width: 992px;
+}
+.content-sub .content-list{
+    float: left;
+    width: 992px;
+
+}
+.content-sub .content-list ul{
+    width: 100%;
+}
+.content-sub .content-list ul li{
+    float: left;
+    width: 33.33%;
+    text-align: right;
+}
+.content-sub .content-list ul li a{
+    display: block;
+}
+.content-sub .content-list ul li a img{
+    width: 316px;
+    height: 170px;
+}
+/* 向导样式end */
+
+
+
+/* 小米站点内容end */
+
+/* 内容详情 */
+.content-desc{
+    background-color: #f5f5f5;
+    padding-top: 22px;
+    
+}
+.content-desc .box-hd{
+    height: 58px;
+    position: relative;
+}
+.content-desc .box-hd h2{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 58px;
+    color: #333;
+}
+.content-desc .box-hd .more{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.content-desc .box-hd .more a{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 58px;
+    color: #424242;
+}
+.content-desc .box-hd .more a i{
+    width: 12px;
+    height: 12px;
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 12px;
+    vertical-align: 2px;
+    background-color: #b0b0b0;
+}
+.content-desc .box-hd .more:hover a{
+    color: #ff6700;
+}
+.content-desc .box-hd .more:hover a i{
+    background-color: #ff6700;
+}
+
+/* 内容star */
+
+.box-bd .row-l{
+    float: left;
+    width: 234px;
+}
+
+.box-bd .row-r{
+    float: left;
+    width: 992px;
+}
+.box-bd .row-l a img{
+    display: block;
+    width: 100%;
+    
+    height: 614px;
+    
+}
+.box-bd .row-r img{
+    width: 234px;
+    height:614px;
+}
+.box-bd .row-r ul{
+    overflow: hidden;
+}
+.box-bd .row-r ul li{
+    position: relative;
+    height: 260px;
+    width: 234px;
+    float: left;
+    padding: 20px 0;
+    background-color: #fff;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+.box-bd .row-r ul li:hover{
+    box-shadow: 0  15px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-5px);
+}
+.box-bd .row-r ul li .figure{
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 18px;
+}
+.box-bd .row-r ul li .figure a{
+    display: block;
+}
+.box-bd .row-r ul li .figure a img{
+    width: 180px;
+    height: 160px;
+    margin: 0 auto 18px;
+}
+.box-bd .row-r ul li .tittle{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.box-bd .row-r ul li .tittle a{
+    color: #333;
+}
+
+.box-bd .row-r ul li .desc{
+    height: 18px;
+    font-size: 12px;
+    text-align: center;
+    color: #b0b0b0;
+    margin: 0 10px 10px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.box-bd .row-r ul li .price{
+    text-align: center;
+    color: #ff6700;
+}
+.box-bd .row-r ul li .flag{
+    position: absolute;
+    top: 0;
+    width: 64px;
+    height: 20px;
+    background-color: #83c44e;
+    text-align: center;
+    color: #fff;
+    left: 50%;
+    margin-left:-32px;
+}
+/* 内容end */
+
+/* 脚部start */
+.footer .footer-service{
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer .footer-service ul li {
+    width: 19.8%;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+    float: left;
+    border-left:1px solid #e0e0e0;
+}
+.footer .footer-service ul li .first{
+    border-left: 0;
+}
+.footer .footer-service ul li{
+    color: #616161;
+}
+.footer .footer-service ul li .iconfont{
+    font-size: 24px;
+    margin-right: 6px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.footer .footer-links{
+    padding: 40px 0;
+}
+.footer .footer-links dl{
+    float: left;
+    width: 160px;
+    height: 112px;
+
+}
+.footer .footer-links dl dt{
+    margin-bottom: 26px;
+    font-size: 14px;
+    color: #424242;
+}
+.footer .footer-links dl dd{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #757575;
+    cursor: pointer;
+}.footer .footer-links dl dd:hover{
+    color: #ff6700;
+}
+.footer .footer-links .col-contact{
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+}
+.footer .footer-links .col-contact .iphone{
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #616161;
+}
+.footer .footer-links .col-contact p{
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+.footer .footer-links .col-contact a{
+    display: inline-block;
+    width: 118px;
+    height: 28px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 12px;
+}.footer .footer-links .col-contact a:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+/* 版权start */
+.copyright{
+    width: 1226;
+    margin: 0 auto;
+    /* position: absolute; */
+    /* background-color: #b0b0b0; */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.copyright ul{
+    font-size: 19px;
+}
+/* 版权end */
+
+/* 脚部end */
+/* 内容详情end */
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* 二维码 */
+.code {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.code img{
+    height: 100px;
+}
+.code span{
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 18px;
+    height: 18px;
+    color: #616161;
+    border: 1px solid #757575;
+    text-align: center;
+    cursor: pointer;
+}
